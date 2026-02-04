@@ -1,0 +1,35 @@
+{
+    "name": "Change Request - Manager Approval",
+    "description": "Route Change Requests for manager approval",
+    "stages": [
+      {
+        "name": "Awaiting Approval",
+        "actions": [
+          {
+            "type": "Approval - User",
+            "parameters": {
+              "approval_table": "change_request",
+              "approver": "Requested by.manager",
+              "approval_type": "Single",
+              "conditions": "State is New"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Post Approval",
+        "actions": [
+          {
+            "type": "Update Record",
+            "parameters": {
+              "table": "change_request",
+              "fields": {
+                "state": "Scheduled"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
