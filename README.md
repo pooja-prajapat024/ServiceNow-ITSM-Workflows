@@ -88,9 +88,6 @@ This project contains ServiceNow ITSM (Incident, Problem, and Change Management)
 - Add Virtual Agent conversation flows.
 - Integrate AI categorization using NLU models.
 
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## 🙌 Acknowledgments
 
