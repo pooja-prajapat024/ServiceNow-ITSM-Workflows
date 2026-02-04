@@ -28,6 +28,7 @@ This project contains ServiceNow ITSM (Incident, Problem, and Change Management)
 
 1. Clone the repository:
    ```bash
+   git clone https://github.com/pooja-prajapat024/ServiceNow-ITSM-Workflows.git
 
    ```
 2. Import Update Sets into your ServiceNow instance.
